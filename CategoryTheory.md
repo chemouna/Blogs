@@ -40,6 +40,24 @@ https://ncatlab.org/nlab/show/topos
 ##### For Do notation 
 (http://blog.sigfpe.com/2008/11/some-thoughts-on-reasoning-and-monads.html)
 
+### Isomorphism, Monomorphisms and Epimorphisms
+
+#### Examples on some categories 
+- On Sets 
+
+- Example Logarithm and exponential 
+  (log is an isomorphism)
+
+- Examples in haskell/ML 
+
+- identifying how well behaved a category is based on inspecting isom/epim/monom
+
+#### automorphism
+ - examples in Haskell 
+
+### Monoidal Category
+https://www.reddit.com/r/haskell/comments/2b8rr2/some_thoughts_on_isomorphic_types/
+
 -- 
 links for reading to write this post:
 http://wiki.portal.chalmers.se/cse/pmwiki.php/CTFP11/CTFP11
