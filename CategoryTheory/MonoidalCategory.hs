@@ -1,0 +1,3 @@
+
+# Monoidal category
+

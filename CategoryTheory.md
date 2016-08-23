@@ -3,7 +3,16 @@
 
 ## Categories
 
+-  in many cases category theory has encouraged, or at least facilitated, a change
+of perspective. When one studies mathematics, one often wants to study mathematical objects: sets,
+groups, topological spaces, Lie groups, etc. In category theory, however, at least as much emphasis is
+placed on maps between objects as on the objects themselves, and in many cases it turns out to be
+much more fruitful to make the maps the center of focus.
+
+
 ### Examples 
+
+- example in topology of Seven Bridges of Königsberg  
 
 
 #### Sets 
@@ -24,6 +33,7 @@ https://ncatlab.org/nlab/show/topos
 #### Cartesian closed categories 
 
 ### Small Categories
+- A category C is called small if the collection Ob(C ) of objects forms a set.
 
 ### Implementation in Haskell 
 
