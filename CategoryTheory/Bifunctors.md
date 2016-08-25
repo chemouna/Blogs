@@ -1,0 +1,6 @@
+
+# BiFuntor 
+
+
+## BiApplicative
+
