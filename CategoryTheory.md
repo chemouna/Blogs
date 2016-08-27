@@ -68,6 +68,13 @@ https://ncatlab.org/nlab/show/topos
 ### Monoidal Category
 https://www.reddit.com/r/haskell/comments/2b8rr2/some_thoughts_on_isomorphic_types/
 
+### Additive Category 
+
+### Subcategory
+
+#### Full subcategory
+
+
 -- 
 links for reading to write this post:
 http://wiki.portal.chalmers.se/cse/pmwiki.php/CTFP11/CTFP11
