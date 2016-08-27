@@ -16,7 +16,7 @@ g : Y → X in that category such that gf = 1X and fg = 1Y, where 1X and 1Y are 
 ### Examples 
 
 #### In Haskell 
-
+- Monads that are isomorphic
 
 ## Canonical Isomorphism
  canonical isomorphism is a canonical map that is an isomorphism. Two objects are said to be canonically 
