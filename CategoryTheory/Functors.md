@@ -9,6 +9,7 @@
 
 ### Contravariant functors
 
+
 ## Hom functors
 https://en.wikipedia.org/wiki/Hom_functor
 
@@ -27,3 +28,4 @@ https://bartoszmilewski.com/2015/01/20/functors/
 
 
 
+  
