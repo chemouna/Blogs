@@ -22,3 +22,36 @@ computations is often clearer and easier than using the State monad.
 
 ### ask :: m (EnvType m) 
 Retrieves the monad environment.
+
+## fail :: String -> m a
+Fail with a message. This operation is not part of the mathematical definition of a monad, but is invoked on pattern-match failure in a do expression. 
+
+## Monadic Naming convention 
+- A postfix 'M' always stands for a function in the Kleisli category: The monad type constructor m is added to function results (modulo currying) and nowhere else. So, for example,
+ filter  ::              (a ->   Bool) -> [a] ->   [a]
+ filterM :: (Monad m) => (a -> m Bool) -> [a] -> m [a]
+
+- A postfix '_' changes the result type from (m a) to (m ()). Thus, for example:
+ sequence  :: Monad m => [m a] -> m [a]
+ sequence_ :: Monad m => [m a] -> m ()
+
+- A prefix 'm' generalizes an existing function to a monadic form. Thus, for example:
+ sum  :: Num a       => [a]   -> a
+ msum :: MonadPlus m => [m a] -> m a
+
+## join 
+### Examples of it's usefulness 
+
+## MonadPlus
+
+### class (Alternative m, Monad m) => MonadPlus m where
+Monads that also support choice and failure.
+
+## newtype WrappedArrow a b c 
+
+### Examples usage 
+
+
+
+
+ 
