@@ -6,6 +6,33 @@
 - Protocols are a mechanism for polymorphism.
 - Protocols can be useful for defining an external boundary, such as an interface to a service. In this case it's useful to have polymorphism so we can substitute different services, or use mock services for testing.
 
+- A protocol is a set of methods. The protocol has a name and an optional documentation string. Each
+method has a name, one or more argument vectors, and an optional documentation string. That's it!
+There are no implementations, no actual code.
+
+- one important difference between protocols and interfaces: protocols have no inheritance.
+You cannot create “subprotocols” like Java's subinterfaces.
+
+- a datatype is not required to provide implementations for every method of its
+protocols or interfaces. Methods lacking an implementation will throw an AbstractMethodError when
+called on instances of that datatype.
+
+## Extending protocols to already existing types
+- to create a new protocol that operates on an existing datatype. and f.ex when you cannot modify the source code
+of the defrecord. You can still extend the protocol to support that datatype, using the extend function:
+```Clojure 
+(extend DatatypeName
+     SomeProtocol
+        {:method-one (fn [x y] ...)
+         :method-two existing-function}
+     AnotherProtocol
+        {...})
+```
+extend takes a datatype name followed by any number of protocol/method map pairs. A method
+map is an ordinary map from method names, given as keywords, to their implementations. 
+
+- Use extend-type when you want to implement several protocols for the same datatype;
+use extend-protocol when you want to implement the same protocol for several datatypes.
 
 ## How protocols solve the expression problem
 
