@@ -30,3 +30,4 @@
 ```
 
 ### Comparing Spec.check  to Haskell QuickCheck 
+
