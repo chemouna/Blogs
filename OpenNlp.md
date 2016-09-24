@@ -79,6 +79,16 @@ They are used to do statistical analysis and hypothesis testing, checking occurr
 
 ##  Clojure 
 
+## Open NLP library 
+
+### Training 
+
+### Document categorizer
+
+### NameFinder
+
+### Coreference resolution 
+
 
 ## TODO
 http://www.cis.upenn.edu/~treebank/
