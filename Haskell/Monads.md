@@ -1,6 +1,8 @@
 
 # Monads
 
+-  a pure function can always be fmap’d into a monadic result  
+
 ## class Monad m => MonadIO m where
 Monads in which IO computations may be embedded. Any monad built by applying a sequence of 
 monad transformers to the IO monad will be an instance of this class.
@@ -50,6 +52,11 @@ Monads that also support choice and failure.
 ## newtype WrappedArrow a b c 
 
 ### Examples usage 
+
+## Identiy Monad
+a monad that does not embody any computational strategy. It simply applies the bound function to its input without any modification.
+Computationally, there is no reason to use it instead of the much simpler act of simply applying functions to their arguments.
+Any monad transformer applied to the Identity monad yields a non-transformer version of that monad. 
 
 
 

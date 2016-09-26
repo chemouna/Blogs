@@ -53,7 +53,7 @@ A list of all the inflected forms of a stem is called its inflectional paradigm.
 tall (positive); taller (comparative); tallest (superlative)
 
 ### Stemming 
-the process of reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. 
+the process of redpucing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. 
 Many search engines treat words with the same stem as synonyms as a kind of query expansion, a process called conflation.
 Stemming programs are commonly referred to as stemming algorithms or stemmers.
 
