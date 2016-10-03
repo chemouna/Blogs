@@ -1,7 +1,10 @@
 
 # Monads
 
--  a pure function can always be fmap’d into a monadic result  
+- a pure function can always be fmap’d into a monadic result  
+- applicative is a super class of monad 
+
+- fail is in the Monad class because of a historical accident; it really belongs in MonadPlus. Take note that its default definition is unsafe 
 
 ## class Monad m => MonadIO m where
 Monads in which IO computations may be embedded. Any monad built by applying a sequence of 
@@ -17,8 +20,7 @@ Lift a computation from the IO monad.
 A value of type IO a is a computation which, when performed, does some I/O before returning a value of type a. 
 
 ## Reader
-Computations which read values from a shared environment.
-The Reader monad (also called the Environment monad). Represents a computation, which can read values from a shared environment,
+Computations which read values from a shared environment The Reader monad (also called the Environment monad). Represents a computation, which can read values from a shared environment,
 pass values from function to function, and execute sub-computations in a modified environment. Using Reader monad for such 
 computations is often clearer and easier than using the State monad.
 
@@ -58,6 +60,7 @@ a monad that does not embody any computational strategy. It simply applies the b
 Computationally, there is no reason to use it instead of the much simpler act of simply applying functions to their arguments.
 Any monad transformer applied to the Identity monad yields a non-transformer version of that monad. 
 
+### Examples of monad transformers that have special case of applying identity 
 
 
 
