@@ -60,8 +60,31 @@ a monad that does not embody any computational strategy. It simply applies the b
 Computationally, there is no reason to use it instead of the much simpler act of simply applying functions to their arguments.
 Any monad transformer applied to the Identity monad yields a non-transformer version of that monad. 
 
+- It can be used as a base monad to which a series of monad transformers may be applied to construct a composite monad. Most monad transformer modules include the special case of applying the transformer to Identity. For example, State s is an abbreviation for StateT s Identity.
+ 
+ 
+ 
 ### Examples of monad transformers that have special case of applying identity 
 
+## Writer Monad 
 
+
+## Monad Fix 
+
+### fix :: (a -> a) -> a 
+fix f is the least fixed point of the function f, i.e. the least defined x such that f x = x. 
+
+## Instances 
+- Data.Monoid wrappers are instances of Monad.Fix 
+
+### Usage examples
+
+
+## MonadZip 
+
+## Instances 
+- Data.Monoid wrappers are instances of Monad.Zip
+## TODO 
+- Read paper Value Recursion in Monadic Computations, Oregon Graduate Institute, 2002.
 
  
