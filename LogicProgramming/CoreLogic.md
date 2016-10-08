@@ -3,7 +3,13 @@
 
 ## Concepts
 
+### Unification
+
+
 ### Disjunction
+
+### Conjunction 
+
 
 ## core.logic 
 
@@ -14,4 +20,5 @@
 ### fresh 
 
 ### conso 
+
 
